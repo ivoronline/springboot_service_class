@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService {
 
-  public String sayHello() {
-    return "Hello";
+  public String hello() {
+    return "Hello from Service";
   }
 
 }

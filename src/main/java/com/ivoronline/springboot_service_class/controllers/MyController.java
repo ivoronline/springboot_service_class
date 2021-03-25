@@ -11,10 +11,15 @@ public class MyController {
   MyService myService = new MyService();
 
   @ResponseBody
-  @RequestMapping("/hello")
-  public String sayHello() {
-    String result = myService.sayHello();
+  @RequestMapping("/Hello")
+  public String hello() {
+
+    //CALL SERVICE
+    String result = myService.hello();
+
+    //RETURN RESULT
     return result;
+
   }
 
 }
